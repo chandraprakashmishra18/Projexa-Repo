@@ -5,18 +5,6 @@
     background-color: rgb(202, 202, 202);
 }
 
-#head{
-    background-color: black;
-    height: 25px;
-    color: white;
-    font-weight: bolder;
-    display: flex;
-    justify-content: center;
-    font-size: small;
-    align-items: center;
-    
-}
-
 #nav-div{
     padding: 10px;
     padding-bottom: 15px;
@@ -37,7 +25,11 @@
     font-weight: bolder;
 }
 
-
 #nav-items{
     word-spacing: 20px;
 }
+
+#urvora{
+    font-size: larger;
+}
+
