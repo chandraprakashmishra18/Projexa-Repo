@@ -12,6 +12,18 @@ body {
     color: #5a3a1b;
 }
 
+.main-navbar a {
+     margin-left: 30px;
+     text-decoration: none;
+     color: rgb(167, 126, 16);
+     font-size: 14px;
+ }
+
+ .logo {
+     font-weight: bold;
+     letter-spacing: 3px;
+ }
+
 /* Header */
 #header-section {
     padding: 20px 40px;
