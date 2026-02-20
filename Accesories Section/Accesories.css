@@ -148,15 +148,15 @@ body {
     }
 }
 /* watches card */
-.products {
+.watches {
     padding: 120px 80px;
 }
 
-.products h2 {
+.watches h2 {
     margin-bottom: 40px;
 }
 
-.grid {
+/* .grid {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 40px;
@@ -168,4 +168,40 @@ body {
 
 .card p {
     margin-top: 10px;
+} */
+ /* watch section cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.card img {
+    background: var(--light);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(30, 144, 255, 0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(30, 144, 255, 0.13);
+}
+
+.card img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card {
+    padding: 1rem;
+}
+
+.dest-card p {
+    font-size: 0.95rem;
+    color: var(--gray);
 }
