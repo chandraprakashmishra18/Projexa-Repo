@@ -664,6 +664,578 @@
   </div>
 
 </section>
+<!-- ═══════════════════════════════════════════════════════════════════════
+     URVORA — NEW ADDITIONS
+     1. LOCAL BUSINESSES SECTION  (paste after Section 8 / Bestsellers)
+     2. PRODUCT COMPARISON SYSTEM (paste before </body>)
+     3. Link additions.css in <head>
+     4. All JS is self-contained at the bottom
+     ════════════════════════════════════════════════════════════════════════ -->
+
+<!-- ╔══════════════════════════════════════════════════════════════════════
+     ║  SECTION — LOCAL BUSINESSES
+     ║  Paste this block after the Bestsellers section (id="featured")
+     ╚══════════════════════════════════════════════════════════════════════ -->
+     
+<section id="local-biz" class="local-section">
+
+  <div class="sh-row anim-1">
+    <div>
+      <span class="eyebrow">In Your City</span>
+      <h2 class="section-title">Trending <em>Local</em></h2>
+      <p class="section-sub">
+        Handpicked boutiques, ateliers and artisan studios from across India —
+        rare craftsmanship waiting to be discovered near you.
+      </p>
+    </div>
+    <a href="#" class="btn btn-link">All Local Shops →</a>
+  </div>
+
+  <!-- City filter tabs -->
+  <div class="lb-filters">
+    <button class="lb-filter active" data-city="all">All Cities</button>
+    <button class="lb-filter" data-city="mumbai">Mumbai</button>
+    <button class="lb-filter" data-city="delhi">Delhi</button>
+    <button class="lb-filter" data-city="bengaluru">Bengaluru</button>
+    <button class="lb-filter" data-city="jaipur">Jaipur</button>
+    <button class="lb-filter" data-city="hyderabad">Hyderabad</button>
+  </div>
+
+  <!-- Business cards grid -->
+  <div class="lb-grid">
+
+    <!-- BIZ CARD 1 -->
+    <a href="#" class="lb-card" data-city="jaipur">
+      <div class="lb-card-top">
+        <div class="lb-icon">🏺</div>
+        <div class="lb-meta">
+          <span class="lb-badge">Trending</span>
+          <span class="lb-city">📍 Jaipur, Rajasthan</span>
+        </div>
+      </div>
+      <div class="lb-card-body">
+        <div class="lb-name">Rasa Pottery Studio</div>
+        <div class="lb-type">Handcrafted Ceramics & Decor</div>
+        <div class="lb-trending-item">
+          <span class="lb-trending-label">🔥 Trending Item</span>
+          <span class="lb-trending-name">Blue Pottery Vase Set — ₹ 3,200</span>
+        </div>
+      </div>
+      <div class="lb-card-footer">
+        <div class="lb-rating">★★★★★ <span>4.9</span></div>
+        <div class="lb-tag">Artisan</div>
+      </div>
+      <div class="lb-hover-line"></div>
+    </a>
+
+    <!-- BIZ CARD 2 -->
+    <a href="#" class="lb-card" data-city="mumbai">
+      <div class="lb-card-top">
+        <div class="lb-icon">🧴</div>
+        <div class="lb-meta">
+          <span class="lb-badge lb-badge-new">New</span>
+          <span class="lb-city">📍 Bandra, Mumbai</span>
+        </div>
+      </div>
+      <div class="lb-card-body">
+        <div class="lb-name">Velvet & Bloom</div>
+        <div class="lb-type">Natural Skincare & Botanicals</div>
+        <div class="lb-trending-item">
+          <span class="lb-trending-label">🔥 Trending Item</span>
+          <span class="lb-trending-name">Rose Water Mist Duo — ₹ 1,450</span>
+        </div>
+      </div>
+      <div class="lb-card-footer">
+        <div class="lb-rating">★★★★★ <span>4.8</span></div>
+        <div class="lb-tag">Organic</div>
+      </div>
+      <div class="lb-hover-line"></div>
+    </a>
+
+    <!-- BIZ CARD 3 (featured — spans 2 rows) -->
+    <a href="#" class="lb-card lb-card-featured" data-city="delhi">
+      <div class="lb-featured-bg"></div>
+      <div class="lb-card-top">
+        <div class="lb-icon lb-icon-lg">🧣</div>
+        <div class="lb-meta">
+          <span class="lb-badge lb-badge-hot">Hot Right Now</span>
+          <span class="lb-city">📍 Lajpat Nagar, Delhi</span>
+        </div>
+      </div>
+      <div class="lb-card-body">
+        <div class="lb-name">Khaadi Threads</div>
+        <div class="lb-type">Heritage Weaves & Textiles</div>
+        <p class="lb-desc">
+          Fourth-generation weavers crafting Chanderi silks, Pashminas and
+          hand-block printed dupattas using ancestral techniques.
+        </p>
+        <div class="lb-trending-item">
+          <span class="lb-trending-label">🔥 Trending Item</span>
+          <span class="lb-trending-name">Hand-woven Pashmina Shawl — ₹ 8,800</span>
+        </div>
+        <div class="lb-trending-item" style="margin-top:6px">
+          <span class="lb-trending-label">💎 Bestseller</span>
+          <span class="lb-trending-name">Chanderi Silk Dupatta — ₹ 4,200</span>
+        </div>
+      </div>
+      <div class="lb-card-footer">
+        <div class="lb-rating">★★★★★ <span>5.0</span></div>
+        <div class="lb-tag">Heritage</div>
+      </div>
+      <div class="lb-hover-line"></div>
+    </a>
+
+    <!-- BIZ CARD 4 -->
+    <a href="#" class="lb-card" data-city="bengaluru">
+      <div class="lb-card-top">
+        <div class="lb-icon">💐</div>
+        <div class="lb-meta">
+          <span class="lb-badge">Trending</span>
+          <span class="lb-city">📍 Indiranagar, Bengaluru</span>
+        </div>
+      </div>
+      <div class="lb-card-body">
+        <div class="lb-name">Scentara Botanica</div>
+        <div class="lb-type">Bespoke Perfumery & Attar</div>
+        <div class="lb-trending-item">
+          <span class="lb-trending-label">🔥 Trending Item</span>
+          <span class="lb-trending-name">Mysore Sandalwood Attar — ₹ 2,600</span>
+        </div>
+      </div>
+      <div class="lb-card-footer">
+        <div class="lb-rating">★★★★☆ <span>4.7</span></div>
+        <div class="lb-tag">Local</div>
+      </div>
+      <div class="lb-hover-line"></div>
+    </a>
+
+    <!-- BIZ CARD 5 -->
+    <a href="#" class="lb-card" data-city="hyderabad">
+      <div class="lb-card-top">
+        <div class="lb-icon">💍</div>
+        <div class="lb-meta">
+          <span class="lb-badge lb-badge-new">New</span>
+          <span class="lb-city">📍 Jubilee Hills, Hyderabad</span>
+        </div>
+      </div>
+      <div class="lb-card-body">
+        <div class="lb-name">Nazm Fine Jewels</div>
+        <div class="lb-type">Heirloom Jewellery & Gold Work</div>
+        <div class="lb-trending-item">
+          <span class="lb-trending-label">🔥 Trending Item</span>
+          <span class="lb-trending-name">Polki Kundan Earrings — ₹ 12,500</span>
+        </div>
+      </div>
+      <div class="lb-card-footer">
+        <div class="lb-rating">★★★★★ <span>4.9</span></div>
+        <div class="lb-tag">Luxury</div>
+      </div>
+      <div class="lb-hover-line"></div>
+    </a>
+
+    <!-- BIZ CARD 6 -->
+    <a href="#" class="lb-card" data-city="mumbai">
+      <div class="lb-card-top">
+        <div class="lb-icon">🕯️</div>
+        <div class="lb-meta">
+          <span class="lb-badge">Trending</span>
+          <span class="lb-city">📍 Colaba, Mumbai</span>
+        </div>
+      </div>
+      <div class="lb-card-body">
+        <div class="lb-name">Lumière Home</div>
+        <div class="lb-type">Artisan Candles & Home Fragrance</div>
+        <div class="lb-trending-item">
+          <span class="lb-trending-label">🔥 Trending Item</span>
+          <span class="lb-trending-name">Oud & Amber Pillar Set — ₹ 1,980</span>
+        </div>
+      </div>
+      <div class="lb-card-footer">
+        <div class="lb-rating">★★★★★ <span>4.8</span></div>
+        <div class="lb-tag">Artisan</div>
+      </div>
+      <div class="lb-hover-line"></div>
+    </a>
+
+  </div><!-- /lb-grid -->
+</section>
+<!-- ═══════════════════════ END LOCAL BUSINESSES ════════════════════════ -->
+
+
+
+
+<!-- ╔══════════════════════════════════════════════════════════════════════
+     ║  PRODUCT COMPARISON SYSTEM
+     ║  1. Add data-* attributes to your existing pc-card elements (see below)
+     ║  2. Paste this entire block just before </body>
+     ╚══════════════════════════════════════════════════════════════════════
+
+   HOW TO WIRE EXISTING PRODUCT CARDS:
+   Add these attributes to each <a class="pc-card"> tag:
+     data-cid="p1"
+     data-cname="Eternal Band · Diamond Ring"
+     data-cprice="₹ 42,000"
+     data-ccat="Rings"
+     data-cstars="★★★★★"
+     data-crating="5.0"
+     data-cmaterial="18k White Gold"
+     data-cweight="4.2g"
+     data-corigin="Italy"
+     data-cwarranty="2 Years"
+     data-cimg="https://..."   ← same image URL as inside pc-icon img
+   ══════════════════════════════════════════════════════════════════════ -->
+
+<!-- ── Comparison Tray (fixed bottom bar) ── -->
+<div id="compare-tray" class="cmp-tray" aria-hidden="true">
+  <div class="cmp-tray-inner">
+    <div class="cmp-tray-label">
+      <span class="cmp-tray-icon">⚖</span>
+      <span>Compare Products</span>
+      <span class="cmp-count" id="cmp-count">0 / 2</span>
+    </div>
+
+    <div class="cmp-slots">
+      <!-- Slot A -->
+      <div class="cmp-slot" id="slot-a">
+        <div class="cmp-slot-empty">
+          <span class="cmp-slot-plus">+</span>
+          <span class="cmp-slot-hint">Select a product</span>
+        </div>
+        <div class="cmp-slot-filled" style="display:none">
+          <img class="cmp-slot-img" src="" alt="">
+          <div class="cmp-slot-info">
+            <div class="cmp-slot-name"></div>
+            <div class="cmp-slot-price"></div>
+          </div>
+          <button class="cmp-slot-remove" data-slot="a" title="Remove">✕</button>
+        </div>
+      </div>
+
+      <!-- VS divider -->
+      <div class="cmp-vs">VS</div>
+
+      <!-- Slot B -->
+      <div class="cmp-slot" id="slot-b">
+        <div class="cmp-slot-empty">
+          <span class="cmp-slot-plus">+</span>
+          <span class="cmp-slot-hint">Select a product</span>
+        </div>
+        <div class="cmp-slot-filled" style="display:none">
+          <img class="cmp-slot-img" src="" alt="">
+          <div class="cmp-slot-info">
+            <div class="cmp-slot-name"></div>
+            <div class="cmp-slot-price"></div>
+          </div>
+          <button class="cmp-slot-remove" data-slot="b" title="Remove">✕</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="cmp-tray-actions">
+      <button class="btn btn-gold cmp-compare-btn" id="cmp-open-btn" disabled>
+        Compare Now →
+      </button>
+      <button class="cmp-clear-btn" id="cmp-clear-btn">Clear All</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Comparison Modal ── -->
+<div id="cmp-modal" class="cmp-modal" aria-hidden="true">
+  <div class="cmp-modal-overlay" id="cmp-overlay"></div>
+  <div class="cmp-modal-panel">
+
+    <!-- Modal header -->
+    <div class="cmp-modal-header">
+      <div>
+        <span class="eyebrow">Side by Side</span>
+        <h2 class="cmp-modal-title">Product <em>Comparison</em></h2>
+      </div>
+      <button class="cmp-modal-close" id="cmp-close-btn" title="Close">✕</button>
+    </div>
+
+    <!-- Product header row -->
+    <div class="cmp-modal-products">
+      <div class="cmp-attr-col cmp-attr-label-col">
+        <div class="cmp-ph-spacer"></div>
+      </div>
+      <div class="cmp-product-col" id="cmp-col-a">
+        <div class="cmp-ph">
+          <img class="cmp-ph-img" id="cmp-ph-img-a" src="" alt="">
+          <div class="cmp-ph-name" id="cmp-ph-name-a">—</div>
+          <div class="cmp-ph-price" id="cmp-ph-price-a">—</div>
+          <div class="cmp-ph-stars" id="cmp-ph-stars-a">—</div>
+          <button class="btn btn-gold cmp-add-btn">Add to Bag</button>
+        </div>
+      </div>
+      <div class="cmp-product-col" id="cmp-col-b">
+        <div class="cmp-ph">
+          <img class="cmp-ph-img" id="cmp-ph-img-b" src="" alt="">
+          <div class="cmp-ph-name" id="cmp-ph-name-b">—</div>
+          <div class="cmp-ph-price" id="cmp-ph-price-b">—</div>
+          <div class="cmp-ph-stars" id="cmp-ph-stars-b">—</div>
+          <button class="btn btn-gold cmp-add-btn">Add to Bag</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparison attributes table -->
+    <div class="cmp-table">
+
+      <div class="cmp-row cmp-row-head">
+        <div class="cmp-attr-col cmp-attr-label-col">Details</div>
+        <div class="cmp-attr-col" id="cmp-label-a">Product A</div>
+        <div class="cmp-attr-col" id="cmp-label-b">Product B</div>
+      </div>
+
+      <div class="cmp-row">
+        <div class="cmp-attr-col cmp-attr-label-col">Category</div>
+        <div class="cmp-attr-col" id="cmp-cat-a">—</div>
+        <div class="cmp-attr-col" id="cmp-cat-b">—</div>
+      </div>
+
+      <div class="cmp-row">
+        <div class="cmp-attr-col cmp-attr-label-col">Price</div>
+        <div class="cmp-attr-col cmp-price-cell" id="cmp-price-a">—</div>
+        <div class="cmp-attr-col cmp-price-cell" id="cmp-price-b">—</div>
+      </div>
+
+      <div class="cmp-row">
+        <div class="cmp-attr-col cmp-attr-label-col">Rating</div>
+        <div class="cmp-attr-col" id="cmp-rating-a">—</div>
+        <div class="cmp-attr-col" id="cmp-rating-b">—</div>
+      </div>
+
+      <div class="cmp-row">
+        <div class="cmp-attr-col cmp-attr-label-col">Material</div>
+        <div class="cmp-attr-col" id="cmp-material-a">—</div>
+        <div class="cmp-attr-col" id="cmp-material-b">—</div>
+      </div>
+
+      <div class="cmp-row">
+        <div class="cmp-attr-col cmp-attr-label-col">Origin</div>
+        <div class="cmp-attr-col" id="cmp-origin-a">—</div>
+        <div class="cmp-attr-col" id="cmp-origin-b">—</div>
+      </div>
+
+      <div class="cmp-row">
+        <div class="cmp-attr-col cmp-attr-label-col">Weight / Size</div>
+        <div class="cmp-attr-col" id="cmp-weight-a">—</div>
+        <div class="cmp-attr-col" id="cmp-weight-b">—</div>
+      </div>
+
+      <div class="cmp-row">
+        <div class="cmp-attr-col cmp-attr-label-col">Warranty</div>
+        <div class="cmp-attr-col" id="cmp-warranty-a">—</div>
+        <div class="cmp-attr-col" id="cmp-warranty-b">—</div>
+      </div>
+
+    </div>
+    <!-- /cmp-table -->
+
+    <!-- Winner highlight -->
+    <div class="cmp-verdict" id="cmp-verdict">
+      <span class="cmp-verdict-icon">✦</span>
+      <span id="cmp-verdict-text">Select two products to see a recommendation.</span>
+    </div>
+
+  </div><!-- /cmp-modal-panel -->
+</div>
+<!-- ═══════════════════════ END COMPARISON SYSTEM ══════════════════════ -->
+
+
+<!-- ────────────────────────────────────────────────────────────────────
+     JAVASCRIPT
+     ──────────────────────────────────────────────────────────────────── -->
+<script>
+/* ─── 1. LOCAL BUSINESSES — City Filter ─────────────────────────── */
+(function () {
+  const filters = document.querySelectorAll('.lb-filter');
+  const cards   = document.querySelectorAll('.lb-card');
+
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filters.forEach(f => f.classList.remove('active'));
+      btn.classList.add('active');
+
+      const city = btn.dataset.city;
+      cards.forEach(card => {
+        const match = city === 'all' || card.dataset.city === city;
+        card.style.opacity    = match ? '1' : '0.25';
+        card.style.pointerEvents = match ? 'auto' : 'none';
+        card.style.transform  = match ? '' : 'scale(0.97)';
+      });
+    });
+  });
+})();
+
+
+/* ─── 2. PRODUCT COMPARISON SYSTEM ──────────────────────────────── */
+(function () {
+  /* State */
+  const slots   = { a: null, b: null };        // product data per slot
+  const tray    = document.getElementById('compare-tray');
+  const modal   = document.getElementById('cmp-modal');
+  const overlay = document.getElementById('cmp-overlay');
+  const openBtn = document.getElementById('cmp-open-btn');
+  const clearBtn= document.getElementById('cmp-clear-btn');
+  const closeBtn= document.getElementById('cmp-close-btn');
+  const countEl = document.getElementById('cmp-count');
+
+  /* ── Inject "Compare" button into every pc-card ── */
+  document.querySelectorAll('.pc-card').forEach(card => {
+    if (!card.dataset.cid) return;           // skip cards without data attributes
+    const btn = document.createElement('button');
+    btn.className   = 'cmp-product-btn';
+    btn.textContent = '⚖ Compare';
+    btn.setAttribute('type', 'button');
+    btn.addEventListener('click', e => {
+      e.preventDefault(); e.stopPropagation();
+      addProduct(card);
+    });
+    card.querySelector('.pc-thumb').appendChild(btn);
+  });
+
+  /* ── Add a product to a slot ── */
+  function addProduct(card) {
+    const id = card.dataset.cid;
+    if (slots.a?.id === id || slots.b?.id === id) return;  // already added
+
+    const data = {
+      id:       id,
+      name:     card.dataset.cname     || 'Unknown',
+      price:    card.dataset.cprice    || '—',
+      cat:      card.dataset.ccat      || '—',
+      stars:    card.dataset.cstars    || '—',
+      rating:   card.dataset.crating   || '—',
+      material: card.dataset.cmaterial || '—',
+      weight:   card.dataset.cweight   || '—',
+      origin:   card.dataset.corigin   || '—',
+      warranty: card.dataset.cwarranty || '—',
+      img:      card.dataset.cimg      ||
+                card.querySelector('.pc-icon img')?.src || ''
+    };
+
+    if (!slots.a)      { slots.a = data; fillSlot('a', data); }
+    else if (!slots.b) { slots.b = data; fillSlot('b', data); }
+    else               { /* both full — swap slot A */ slots.a = data; fillSlot('a', data); }
+
+    refreshTray();
+  }
+
+  /* ── Fill a tray slot ── */
+  function fillSlot(key, data) {
+    const slot   = document.getElementById(`slot-${key}`);
+    const empty  = slot.querySelector('.cmp-slot-empty');
+    const filled = slot.querySelector('.cmp-slot-filled');
+    slot.querySelector('.cmp-slot-img').src   = data.img;
+    slot.querySelector('.cmp-slot-name').textContent  = data.name;
+    slot.querySelector('.cmp-slot-price').textContent = data.price;
+    empty.style.display  = 'none';
+    filled.style.display = 'flex';
+  }
+
+  /* ── Clear a tray slot ── */
+  function clearSlot(key) {
+    slots[key] = null;
+    const slot   = document.getElementById(`slot-${key}`);
+    slot.querySelector('.cmp-slot-empty').style.display  = 'flex';
+    slot.querySelector('.cmp-slot-filled').style.display = 'none';
+    refreshTray();
+  }
+
+  /* ── Refresh tray state ── */
+  function refreshTray() {
+    const count = (slots.a ? 1 : 0) + (slots.b ? 1 : 0);
+    countEl.textContent  = `${count} / 2`;
+    openBtn.disabled     = count < 2;
+    tray.style.transform = count > 0 ? 'translateY(0)' : 'translateY(100%)';
+    tray.setAttribute('aria-hidden', count === 0 ? 'true' : 'false');
+  }
+
+  /* ── Remove buttons ── */
+  document.querySelectorAll('.cmp-slot-remove').forEach(btn => {
+    btn.addEventListener('click', () => clearSlot(btn.dataset.slot));
+  });
+  clearBtn.addEventListener('click', () => { clearSlot('a'); clearSlot('b'); });
+
+  /* ── Open modal ── */
+  openBtn.addEventListener('click', () => {
+    if (!slots.a || !slots.b) return;
+    populateModal(slots.a, slots.b);
+    modal.classList.add('is-open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  });
+
+  /* ── Close modal ── */
+  function closeModal() {
+    modal.classList.remove('is-open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', closeModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  /* ── Populate modal ── */
+  function populateModal(a, b) {
+    // Images & header
+    document.getElementById('cmp-ph-img-a').src   = a.img;
+    document.getElementById('cmp-ph-img-b').src   = b.img;
+    document.getElementById('cmp-ph-name-a').textContent  = a.name;
+    document.getElementById('cmp-ph-name-b').textContent  = b.name;
+    document.getElementById('cmp-ph-price-a').textContent = a.price;
+    document.getElementById('cmp-ph-price-b').textContent = b.price;
+    document.getElementById('cmp-ph-stars-a').textContent = a.stars;
+    document.getElementById('cmp-ph-stars-b').textContent = b.stars;
+    // Table labels
+    document.getElementById('cmp-label-a').textContent = a.name.split('·')[0].trim();
+    document.getElementById('cmp-label-b').textContent = b.name.split('·')[0].trim();
+    // Rows
+    [['cat','cat'],['price','price'],['rating','rating'],
+     ['material','material'],['origin','origin'],
+     ['weight','weight'],['warranty','warranty']
+    ].forEach(([attr]) => {
+      document.getElementById(`cmp-${attr}-a`).textContent = a[attr];
+      document.getElementById(`cmp-${attr}-b`).textContent = b[attr];
+    });
+    // Highlight better price (lower is better)
+    highlightBetter('cmp-price-a','cmp-price-b', parsePrice(a.price), parsePrice(b.price), true);
+    highlightBetter('cmp-rating-a','cmp-rating-b', parseFloat(a.rating), parseFloat(b.rating), false);
+    // Verdict
+    const aScore = score(a), bScore = score(b);
+    const verdictEl = document.getElementById('cmp-verdict-text');
+    if (aScore > bScore)
+      verdictEl.innerHTML = `<strong>${a.name.split('·')[0].trim()}</strong> edges ahead — better value for the price.`;
+    else if (bScore > aScore)
+      verdictEl.innerHTML = `<strong>${b.name.split('·')[0].trim()}</strong> edges ahead — better value for the price.`;
+    else
+      verdictEl.textContent = 'Both products are evenly matched — let your heart decide.';
+  }
+
+  function parsePrice(str) {
+    return parseFloat((str || '').replace(/[^0-9.]/g, '')) || 0;
+  }
+  function highlightBetter(idA, idB, valA, valB, lowerBetter) {
+    const elA = document.getElementById(idA);
+    const elB = document.getElementById(idB);
+    elA.classList.remove('cmp-better','cmp-worse');
+    elB.classList.remove('cmp-better','cmp-worse');
+    if (!valA || !valB) return;
+    const aWins = lowerBetter ? valA < valB : valA > valB;
+    if (aWins) { elA.classList.add('cmp-better'); elB.classList.add('cmp-worse'); }
+    else if (valA !== valB) { elB.classList.add('cmp-better'); elA.classList.add('cmp-worse'); }
+  }
+  function score(p) {
+    return (parseFloat(p.rating) || 0) * 20 - (parsePrice(p.price) / 1000);
+  }
+
+  /* ── Init: tray hidden on load ── */
+  tray.style.transform  = 'translateY(100%)';
+  tray.style.transition = 'transform 0.45s cubic-bezier(0.25,0.46,0.45,0.94)';
+})();
+</script>
 
 <!-- ═══════════════════════════════════════════════
      SECTION 13 — FOOTER
@@ -734,6 +1306,7 @@
     </div>
 
   </div>
+
 
   <div class="footer-bottom">
     <p class="footer-copy">© 2025 Urvora. All rights reserved.</p>  <!--  -->
