@@ -1,17 +1,4 @@
-/* ═══════════════════════════════════════════════════════════
-   LUMIÈRE STUDIO — style.css
-   Linked from index.html via <link rel="stylesheet" href="style.css">
-   
-   HOW TO RETHEME:
-   • Change the CSS variables in :root below
-   • --gold sets the accent colour throughout
-   • --bg / --bg-2 / --bg-3 set the background layers
-   • --font-display / --font-body set the typefaces
-═══════════════════════════════════════════════════════════ */
 
-/* ─────────────────────────────────────────────
-   DESIGN TOKENS
-───────────────────────────────────────────── */
 :root {
   /* Backgrounds */
   --bg:           #0b0a09;

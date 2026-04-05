@@ -1,12 +1,5 @@
 // ============================================================
-//  URVORA — E-Commerce JS  |  Fully Debugged + Search Added
-//  Fixes: innerHTML+=, apostrophe crash, wishlist modal,
-//         qty controls, z-index shimmer, double-inject guard,
-//         alert() removed, heart state restore
-//  Added: Live search with result highlighting & navigation
-// ============================================================
-
-// ─── STATE ──────────────────────────────────────────────────
+//  URVORA — E-Commerce JS  
 let cart     = JSON.parse(localStorage.getItem('urvora_cart')    || '[]');
 let wishlist = new Set(JSON.parse(localStorage.getItem('urvora_wish') || '[]'));
 
