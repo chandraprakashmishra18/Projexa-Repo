@@ -2,7 +2,7 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 if (cart.length === 0) {
     alert("Your cart is empty. Please add items before checkout.");
-    window.location.href = "cart.html";
+    window.location.href = "cart3.html";
 }
 
 const orderItems = document.getElementById("order-items");
