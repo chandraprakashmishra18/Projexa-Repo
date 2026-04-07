@@ -34,7 +34,7 @@ alert("Order placed successfully!");
 
 localStorage.removeItem("cart");
 
-window.location.href = "index.html";
+window.location.href = "fragrance.html";
 
 });
 
